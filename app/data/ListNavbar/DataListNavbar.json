@@ -1,0 +1,37 @@
+{
+    "navbar": [
+      {
+        "label": "Beranda",
+        "link": "/"
+      },
+      {
+        "label": "Produk",
+        "link": "/produk"
+      },
+      {
+        "label": "Teknologi",
+        "link": "/teknologi"
+      },
+      {
+        "label": "Blog",
+        "link": "/blog"
+      },
+      {
+        "label": "Tentang Kami",
+        "link": "/tentang"
+      },
+      {
+        "label": "Kontak",
+        "link": "/kontak"
+      },
+      {
+        "label": "FAQ",
+        "link": "/faq"
+      },
+      {
+        "label": "Login",
+        "link": "/login"
+      }
+    ]
+  }
+  
