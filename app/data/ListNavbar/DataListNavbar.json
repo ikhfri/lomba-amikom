@@ -1,36 +1,28 @@
 {
     "navbar": [
       {
+        "static": "/shopping-cart.png",
+        "gif": "/shopping-cart.gif",
         "label": "Beranda",
         "link": "/"
       },
       {
+        "static": "/box.png",
+        "gif": "/box.gif",
         "label": "Produk",
         "link": "/produk"
       },
       {
-        "label": "Teknologi",
-        "link": "/teknologi"
-      },
-      {
-        "label": "Blog",
-        "link": "/blog"
-      },
-      {
-        "label": "Tentang Kami",
+        "static": "/valentines-day.png",
+        "gif": "/valentines-day.gif",
+        "label": "Wishlist",
         "link": "/tentang"
       },
       {
-        "label": "Kontak",
-        "link": "/kontak"
-      },
-      {
-        "label": "FAQ",
-        "link": "/faq"
-      },
-      {
-        "label": "Login",
-        "link": "/login"
+        "static": "/user.png",
+        "gif": "/user.gif",
+        "label": "Account",
+        "link": "/"
       }
     ]
   }
