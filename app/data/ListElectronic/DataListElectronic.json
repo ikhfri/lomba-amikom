@@ -1,0 +1,102 @@
+{
+    "electronic" : [
+  {
+    "label": "Air Fryer",
+    "image": "/Electronic/air fryer.jpeg",
+    "price": 89.99,
+    "description": "Healthy cooking appliance that circulates hot air to cook food with little to no oil.",
+    "link": "/air-fryer"
+  },
+  {
+    "label": "Air Conditioner",
+    "image": "/Electronic/AirConditioner.jpeg",
+    "price": 399.99,
+    "description": "Cooling system that regulates temperature and humidity in indoor spaces.",
+    "link": "/air-conditioner"
+  },
+  {
+    "label": "Air Purifier",
+    "image": "/Electronic/AirPurifier.jpeg",
+    "price": 149.99,
+    "description": "Device that removes contaminants from the air to improve indoor air quality.",
+    "link": "/air-purifier"
+  },
+  {
+    "label": "Blender",
+    "image": "/Electronic/Blender.jpeg",
+    "price": 59.99,
+    "description": "Kitchen appliance used for mixing, pureeing, or emulsifying food and liquids.",
+    "link": "/blender"
+  },
+  {
+    "label": "Electric Fan",
+    "image": "/Electronic/ElectricFan.jpeg",
+    "price": 39.99,
+    "description": "Portable cooling device that circulates air in a room.",
+    "link": "/electric-fan"
+  },
+  {
+    "label": "Electric Kettle",
+    "image": "/Electronic/ElectricKettle.jpeg",
+    "price": 29.99,
+    "description": "Quick and efficient appliance for boiling water for tea, coffee, or other hot beverages.",
+    "link": "/electric-kettle"
+  },
+  {
+    "label": "Electric Oven",
+    "image": "/Electronic/ElectricOven.jpeg",
+    "price": 299.99,
+    "description": "Cooking appliance used for baking, roasting, and heating food.",
+    "link": "/electric-oven"
+  },
+  {
+    "label": "Hair Dryer",
+    "image": "/Electronic/HairDryer.jpeg",
+    "price": 49.99,
+    "description": "Hand-held device that blows hot or cool air to dry and style hair.",
+    "link": "/hair-dryer"
+  },
+  {
+    "label": "Iron",
+    "image": "/Electronic/Iron.jpeg",
+    "price": 34.99,
+    "description": "Appliance used to remove wrinkles from fabric through heat and pressure.",
+    "link": "/iron"
+  },
+  {
+    "label": "Microwave",
+    "image": "/Electronic/Microwave.jpeg",
+    "price": 89.99,
+    "description": "Kitchen appliance that uses electromagnetic waves to heat and cook food quickly.",
+    "link": "/microwave"
+  },
+  {
+    "label": "Refrigerator",
+    "image": "/Electronic/Refrigerator.jpeg",
+    "price": 799.99,
+    "description": "Large appliance for keeping food and beverages cool and fresh.",
+    "link": "/refrigerator"
+  },
+  {
+    "label": "Rice Cooker",
+    "image": "/Electronic/RiceCooker.jpeg",
+    "price": 49.99,
+    "description": "Automated kitchen appliance designed to steam or boil rice.",
+    "link": "/rice-cooker"
+  },
+  {
+    "label": "Vacuum Cleaner",
+    "image": "/Electronic/vacuumCleaner.jpeg",
+    "price": 129.99,
+    "description": "Cleaning device that uses suction to remove dirt and debris from floors and surfaces.",
+    "link": "/vacuum-cleaner"
+  },
+  {
+    "label": "Washing Machine",
+    "image": "/Electronic/washingMachine.jpeg",
+    "price": 449.99,
+    "description": "Appliance used to clean clothes and textiles automatically.",
+    "link": "/washing-machine"
+  }
+]
+}
