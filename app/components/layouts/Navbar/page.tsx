@@ -14,10 +14,11 @@ export default function Navbar() {
 
   return (
     <main className="flex justify-center">
-      <nav className="w-full h-20 bg-white text-[#969696dd] font-semibold">
-        <ul className="flex justify-end mt-7 mr-7 text-center">
+      <nav className="w-[40%] rounded-full mt-5 z-30 h-20 bg-slate-500 font-semibold opacity-65 shadow-[0px_0px_50px_1px_#000000] backdrop-filter-[20px] backdrop-blur-[5px] fixed">
+        <ul className="flex justify-end mt-7 mr-16 text-center">
+          <img src="/nevtik.png" alt="" className="w-[8%] absolute left-0 ml-4 top-0 mt-2" />
           {navbarItems.map((item, index) => (
-            <li key={index} className="flex items-center relative w-36 h-10 -top-2 ">
+            <li key={index} className="flex items-center justify-center relative w-28 h-6">
               <Link href={item.link} className="flex items-center">
                 <img
                   onMouseEnter={() => setHoveredIndex(index)}
@@ -25,12 +26,12 @@ export default function Navbar() {
                   src={hoveredIndex === index ? item.gif : item.static}
                   className={`z-10 transition-transform duration-200 pl-2 ${
                     hoveredIndex === index
-                      ? " h-[33.3px] relative -left-1 "
+                      ? " h-[33.3px] relative -left-0 "
                       : "h-[25px]"
                   }`}
                   alt={item.label}
                 />
-                <span className="px-10 absolute">{item.label}</span>
+                <span className={`px-10 absolute w-1 text-white ${hoveredIndex === index ? "left-10" : ""}`}>{item.label}</span>
               </Link>
             </li>
           ))}

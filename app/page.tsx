@@ -1,10 +1,12 @@
 import Image from "next/image";
-import HeroPage from "./pages/Hero/page";
-
+import { CanvasContainer } from "./components/3D/Canvas/CanvasContainer";
+import HeroPage from "./pages/Hero/Hero";
+import FurniturePage from "./pages/Furniture/Furniture";
 export default function Home() {
   return (
-    <div className="">
+    <main className="overflow-x-hidden">
       <HeroPage />
-    </div>
+      <FurniturePage />
+    </main>
   );
 }

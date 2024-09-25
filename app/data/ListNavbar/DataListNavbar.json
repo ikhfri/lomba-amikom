@@ -2,15 +2,9 @@
     "navbar": [
       {
         "static": "/shopping-cart.png",
-        "gif": "/shopping-cart.gif",
+        "gif": "/cart.gif",
         "label": "Beranda",
         "link": "/"
-      },
-      {
-        "static": "/box.png",
-        "gif": "/box.gif",
-        "label": "Produk",
-        "link": "/produk"
       },
       {
         "static": "/valentines-day.png",
