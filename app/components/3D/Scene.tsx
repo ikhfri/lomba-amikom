@@ -11,8 +11,10 @@ import { SpotLight, useGLTF } from '@react-three/drei'
 import { GLTF } from 'three-stdlib'
 import { useThree } from '@react-three/fiber';
 import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
 
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+gsap.registerPlugin(useGSAP)
+
 
 type GLTFResult = GLTF & {
   nodes: {
@@ -25,41 +27,13 @@ type GLTFResult = GLTF & {
 
 export function Sofa(props: JSX.IntrinsicElements['group']) {
   const { nodes, materials } = useGLTF('/scene.glb') as GLTFResult;
-  const Sofa = useRef(null!);
-  const spotLight = useRef<THREE.SpotLight>(null!);
-  const scrollTriggerRef = useRef<HTMLDivElement>(null);
-
-  const {scene, camera,} = useThree();
-  const tl = gsap.timeline();
-
-  useLayoutEffect(() => {
-    new ScrollTrigger({});
-
-    //component Hero.tsx
-    tl.to(spotLight.current.rotation, {x: -50, y: -90, z: 70, duration: 2, scrollTrigger: { trigger: '.trigger', start: "-=50px", end: "+=300px", scrub: true, }})
-    tl.to(scene.rotation, {
-      x: 0,
-      y: 1,
-      z: 0,
-      duration: 1,
-      scrollTrigger: {
-        trigger: '.trigger',
-        start: '-=50px',
-        end: '+=300px',
-        scrub: true,
-        markers: true,
-      }
-
-    })
-  })
 
   return (
     <>
-      <pointLight intensity={20} position={[1, 5, 1]} />
-      <SpotLight ref={spotLight} intensity={4} castShadow angle={.42} shadow-mapSize={1024} penumbra={1} rotation={[0, 20 , 0]} position={[2, 2, 3]} color={'#ff8c00'} />
-      <hemisphereLight intensity={1} color={'#0000ff'} position={[10, 10, 10]} />
+      <pointLight intensity={50} position={[1, 5, 1]} />
+      <hemisphereLight intensity={5} color={'#0000ff'} position={[10, 10, 10]} />
       <group {...props} dispose={null}>
-        <mesh geometry={nodes.model.geometry} material={materials.place_holder} ref={Sofa} scale={2.5} rotation={[0, 20 , 0]} />
+        <mesh geometry={nodes.model.geometry} material={materials.place_holder} scale={3  } />
       </group>
     </>
   )

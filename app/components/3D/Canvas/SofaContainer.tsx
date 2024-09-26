@@ -11,7 +11,7 @@ import { Buku } from "../Base";
 // without registering scrolltriiger the model will break
 gsap.registerPlugin(ScrollTrigger);
 
-export const CanvasContainer = () => {
+export const SofaContainer = () => {
   return (
     <Canvas
       camera={{
@@ -31,7 +31,7 @@ export const CanvasContainer = () => {
         floatIntensity={1}
         floatingRange={[-0.1, 0.1]}
         >
-          <Buku/>
+          <Sofa/>
         </Float>
       </Suspense>
     </Canvas>
