@@ -20,10 +20,17 @@ type GLTFResult = GLTF & {
 export function RakSepatu(props: JSX.IntrinsicElements['group']) {
   const { nodes, materials } = useGLTF('/rak-sepatu.glb') as GLTFResult
   return (
-    <group {...props} dispose={null}>
-      <mesh geometry={nodes.model.geometry} material={materials.place_holder} />
-    </group>
-  )
+    <>
+    <hemisphereLight intensity={2} position={[0, 0, 0]} />
+      <group {...props} dispose={null}>
+        <mesh
+          geometry={nodes.model.geometry}
+          material={materials.place_holder}
+          scale={3}
+        />
+      </group>
+    </>
+  );
 }
 
 useGLTF.preload('/rak-sepatu.glb')

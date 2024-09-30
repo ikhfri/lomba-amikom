@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
 import { Canvas } from "@react-three/fiber";
-import { Environment, OrbitControls } from "@react-three/drei";
+import { OrbitControls } from "@react-three/drei";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { Suspense } from "react";
-import { Loading } from './CanvasLoader';
+import { Loading } from "./CanvasLoader";
 import { RakSepatu } from "../Rak-sepatu";
 
 // without registering scrolltriiger the model will break
@@ -19,13 +19,9 @@ export const RakContainer = () => {
       }}
       shadows
     >
-      <OrbitControls
-        enablePan={false}
-        enableRotate={true}
-        enableZoom={false}
-      />
+      <OrbitControls enablePan={false} enableRotate={true} enableZoom={false} />
       <Suspense fallback={<Loading />}>
-          <RakSepatu />
+        <RakSepatu />
       </Suspense>
     </Canvas>
   );
