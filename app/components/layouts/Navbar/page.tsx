@@ -11,7 +11,6 @@ export default function Navbar() {
     null
   );
 
-  console.log(navbarItems);
 
   return (
     <main className="flex justify-center">
