@@ -1,16 +1,28 @@
+'use client';
+
 import React from "react";
 import { FaGithub, FaInstagram, FaLinkedin,  } from "react-icons/fa";
 import  Link from "next/link"
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export default function FooterPage() {
+
+  const pathname = usePathname();
+  const isCartPage = pathname === "/cart";
+
+  if (isCartPage) {
+    return null;
+  }
+
+
   return (
     <footer className="relative bg-gray-900 pt-8 pb-6">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap text-left lg:text-left">
           <div className="w-full lg:w-6/12 px-4">
             <h4 className="text-3xl font-semibold text-white">
-              Let's keep in touch!
+              Let{`'`}s keep in touch!
             </h4>
             <h5 className="text-lg mt-0 mb-2 text-gray-400">
               Find us on any of these platforms, we respond 1-2 business days.
@@ -22,14 +34,20 @@ export default function FooterPage() {
               >
                 <Link href={"https://nevtik.org"}>
                   {" "}
-                  <Image width={1000} height={1000} alt="" className="w-full" src={"/nevtik.png"}/>
+                  <Image
+                    width={1000}
+                    height={1000}
+                    alt=""
+                    className="w-full"
+                    src={"/nevtik.png"}
+                  />
                 </Link>
               </button>
               <button
                 className="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                 type="button"
               >
-                <Link href={""}>
+                <Link href={"https://instagram.com/nevtikacademy"}>
                   {" "}
                   <FaInstagram />
                 </Link>
@@ -38,13 +56,18 @@ export default function FooterPage() {
                 className="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                 type="button"
               >
-                <FaLinkedin />
+                {" "}
+                <Link href={"https://id.linkedin.com/company/nevtik"}>
+                  <FaLinkedin />
+                </Link>
               </button>
               <button
                 className="bg-white text-gray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                 type="button"
               >
-                <FaGithub />
+                <Link href={"https://github.com/NEVTIK-org"}>
+                  <FaGithub />
+                </Link>
               </button>
             </div>
           </div>

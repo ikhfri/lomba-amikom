@@ -77,7 +77,7 @@ export default function FurniturePage() {
             ref={overlayRef}
             className="absolute inset-0 bg-[#2b2a2a] opacity-0 pointer-events-none"
           ></div>
-          <div ref={contentRef} className="relative h-full opacity-0">
+          <div ref={contentRef} className="relative h-full opacity-0 ml-36">
             <div className="container mx-auto px-64 h-full">
               <main className="flex items-center w-screen h-full">
                 <div className="w-1/2">

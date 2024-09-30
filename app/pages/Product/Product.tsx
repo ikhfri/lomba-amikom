@@ -32,7 +32,7 @@ export default function ProductPage() {
 
 
     return (
-        <div className="relative bg-white w-screen md:h-[400vh] h-[500vh]" style={{ backgroundImage: "url('/bg-product.jpg')" }}>
+        <div className="relative bg-white w-screen h-[500vh] md:h-[400vh] lg:h-[500vh]" style={{ backgroundImage: "url('/bg-product.jpg')" }}>
             <div className="container mx-auto py-16 card-scroll-trigger">
                 <CardProduct/>
             </div>

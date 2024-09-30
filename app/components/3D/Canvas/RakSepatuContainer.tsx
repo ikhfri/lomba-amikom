@@ -11,7 +11,7 @@ import { RakSepatu } from "../Rak-sepatu";
 // without registering scrolltriiger the model will break
 gsap.registerPlugin(ScrollTrigger);
 
-export const RakContainer = () => {
+const RakContainer = () => {
   return (
     <Canvas
       camera={{
@@ -26,3 +26,4 @@ export const RakContainer = () => {
     </Canvas>
   );
 };
+export default RakContainer;

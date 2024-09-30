@@ -4,7 +4,7 @@
         "static": "/shopping-cart.png",
         "gif": "/cart.gif",
         "label": "Cart",
-        "link": "/"
+        "link": "/cart"
       },
       {
         "static": "/valentines-day.png",

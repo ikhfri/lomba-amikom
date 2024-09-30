@@ -9,10 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^2.1.8",
+    "@heroicons/react": "^2.1.5",
     "@prismicio/client": "^7.11.0",
     "@prismicio/next": "^1.6.0",
     "clsx": "^2.1.1",
     "gsap": "^3.12.5",
+    "heroicons": "^2.1.5",
     "next": "14.2.12",
     "react": "^18",
     "react-awesome-reveal": "^4.2.14",
