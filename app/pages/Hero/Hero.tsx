@@ -28,14 +28,13 @@ export default function HeroPage() {
         trigger: '.image-trigger',
         start: 'top top',
         end: '+=600 center',
-        scrub: 16,
-        markers: true
+        scrub: 8,
       }
     });
 
     scrollTl.to(imageRef2.current, {
       y: "-40%",
-      duration: 6,
+      duration: 1,
       ease: 'power1.inOut'
     })
 
