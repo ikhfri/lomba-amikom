@@ -4,16 +4,13 @@ import { useRef } from 'react';
 
 export default function CardProduct() {
     const CardData = DataProduct.product;
-    const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
 
     return (
     <div className="py-16 w-screen absolute will-change-transform card-translate">
         <div className="container absolute left-0 px-4">
-            {/* Menggunakan flex untuk membuat card menjadi horizontal */}
             <div className="flex gap-8">
                 {CardData.map((item, index) => (
                     <div 
-                        ref={el => { if (el) cardRefs.current[index] = el; }}
                         key={index} 
                         className="bg-white rounded-lg shadow-[10px_-0px_18px_3px_#000] p-8 w-full md:w-[30%] lg:w-[22%] flex-shrink-0"
                     >
