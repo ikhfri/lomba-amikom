@@ -19,7 +19,7 @@ export default async function DetailProductPage(props: any) {
             src={product.data.image}
           /> */}
           <div className="">
-            <RakContainer />
+            {product.data.object}
           </div>
           <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
             <h2 className="text-sm title-font text-gray-500 tracking-widest">BRAND NAME</h2>

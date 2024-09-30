@@ -1,5 +1,5 @@
+import { RakContainer } from "@/app/components/3D/Canvas/RakSepatuContainer";
 import { NextRequest, NextResponse } from "next/server";
-
 const data = [
     {
         "id": 1,
@@ -8,6 +8,7 @@ const data = [
         "price": 249.99,
         "description": "Comfortable armchair with plush cushioning and sturdy frame.",
         "link": "/armchair",
+        "object": RakContainer
       },
       {
         "id": 2,
@@ -16,6 +17,7 @@ const data = [
         "price": 599.99,
         "description": "Spacious bed frame with headboard, suitable for various mattress sizes.",
         "link": "/bed"
+        
       },
       {
         "id": 3,
