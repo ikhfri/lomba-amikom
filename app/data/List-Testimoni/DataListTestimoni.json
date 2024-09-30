@@ -1,0 +1,65 @@
+{
+   "testimoni" : [
+  {
+    "image": "user-1.jpg",
+    "name": "Emily Thompson",
+    "description": "The dining set I ordered is absolutely stunning! It's even more beautiful in person than in the photos. Excellent quality and fast shipping."
+  },
+  {
+    "image": "user-2.jpg",
+    "name": "Michael Chen",
+    "description": "I'm impressed with the craftsmanship of my new bookshelf. It's solid, well-designed, and fits perfectly in my home office."
+  },
+  {
+    "image": "user-3.jpg",
+    "name": "Sarah Johnson",
+    "description": "The customer service was exceptional. They helped me choose the perfect sofa for my living room, and I couldn't be happier with the result."
+  },
+  {
+    "image": "user-4.jpg",
+    "name": "David Rodriguez",
+    "description": "I've bought several pieces from this store, and each one has exceeded my expectations. The quality is consistently top-notch."
+  },
+  {
+    "image": "user-5.jpg",
+    "name": "Olivia Patel",
+    "description": "The bed frame I purchased is not only beautiful but also incredibly sturdy. It was easy to assemble and looks fantastic in my bedroom."
+  },
+  {
+    "image": "user-6.jpg",
+    "name": "James Wilson",
+    "description": "I love my new armchair! It's comfortable, stylish, and the perfect addition to my reading nook. Great value for the price."
+  },
+  {
+    "image": "user-7.jpg",
+    "name": "Emma Davis",
+    "description": "The coffee table arrived quickly and in perfect condition. It's exactly what I was looking for to complete my living room set."
+  },
+  {
+    "image": "user-8.jpg",
+    "name": "Liam Brown",
+    "description": "I'm thoroughly impressed with the quality of the outdoor furniture set I ordered. It's weatherproof and looks great on my patio."
+  },
+  {
+    "image": "user-9.jpg",
+    "name": "Sophia Martinez",
+    "description": "The dresser I bought is not only functional but also a beautiful piece of furniture. The craftsmanship is impeccable."
+  },
+  {
+    "image": "user-10.jpg",
+    "name": "Ethan Taylor",
+    "description": "I hesitated to buy furniture online, but I'm glad I did. The TV stand is exactly as described and looks fantastic in my living room."
+  },
+  {
+    "image": "user-11.jpg",
+    "name": "Ava Wong",
+    "description": "The dining chairs are comfortable and elegant. They've received many compliments from our dinner guests already!"
+  },
+  {
+    "image": "user-12.jpg",
+    "name": "Noah Garcia",
+    "description": "I'm impressed by the range of styles available. Found the perfect modern desk for my home office. Great quality and prompt delivery."
+  }
+]
+   
+}
