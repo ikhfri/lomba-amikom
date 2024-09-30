@@ -1,6 +1,7 @@
 {
     "product": [
   {
+    "id": 1,
     "label": "Armchair",
     "image": "/Product/Armchair.jpeg",
     "price": 249.99,
@@ -8,6 +9,7 @@
     "link": "/armchair"
   },
   {
+    "id": 2,
     "label": "Bed",
     "image": "/Product/Bed.jpeg",
     "price": 599.99,
@@ -15,6 +17,7 @@
     "link": "/bed"
   },
   {
+    "id": 3,
     "label": "Bench",
     "image": "/Product/Bench.jpeg",
     "price": 179.99,
@@ -22,6 +25,7 @@
     "link": "/bench"
   },
   {
+    "id": 4,
     "label": "Bookcase",
     "image": "/Product/Bookcase.jpeg",
     "price": 299.99,
@@ -29,6 +33,7 @@
     "link": "/bookcase"
   },
   {
+    "id": 5,
     "label": "BreakfastBar",
     "image": "/Product/BreakfastBar.jpeg",
     "price": 349.99,
@@ -36,6 +41,7 @@
     "link": "/breakfastbar"
   },
   {
+    "id": 6,
     "label": "Chair",
     "image": "/Product/Chair.jpeg",
     "price": 129.99,
@@ -43,6 +49,7 @@
     "link": "/chair"
   },
   {
+    "id": 7,
     "label": "ConsoleTable",
     "image": "/Product/ConsoleTable.jpeg",
     "price": 219.99,
@@ -50,6 +57,7 @@
     "link": "/consoletable"
   },
   {
+    "id": 7,
     "label": "Drawer",
     "image": "/Product/Drawer.jpeg",
     "price": 389.99,
@@ -57,6 +65,7 @@
     "link": "/drawer"
   },
   {
+    "id": 8,
     "label": "Dresser",
     "image": "/Product/Dresser.jpeg",
     "price": 449.99,
@@ -64,6 +73,7 @@
     "link": "/dresser"
   },
   {
+    "id": 9,
     "label": "FoldingTable",
     "image": "/Product/FoldingTable.jpeg",
     "price": 159.99,
@@ -71,6 +81,7 @@
     "link": "/foldingtable"
   },
   {
+    "id": 10,
     "label": "KitchenCabinet",
     "image": "/Product/KitchenCabinet.jpeg",
     "price": 579.99,
@@ -78,6 +89,7 @@
     "link": "/kitchencabinet"
   },
   {
+    "id": 11,
     "label": "Mirror",
     "image": "/Product/Mirror.jpeg",
     "price": 139.99,
@@ -85,6 +97,7 @@
     "link": "/mirror"
   },
   {
+    "id": 12,
     "label": "OfficeChair",
     "image": "/Product/OfficeChair.jpeg",
     "price": 229.99,
@@ -92,6 +105,7 @@
     "link": "/officechair"
   },
   {
+    "id": 13,
     "label": "OfficeDesk",
     "image": "/Product/OfficeDesk.jpeg",
     "price": 329.99,
@@ -99,6 +113,7 @@
     "link": "/officedesk"
   },
   {
+    "id": 14,
     "label": "RockingChair",
     "image": "/Product/RockingChair.jpeg",
     "price": 279.99,
@@ -106,6 +121,7 @@
     "link": "/rockingchair"
   },
   {
+    "id": 15,
     "label": "RomanClock",
     "image": "/Product/RomanClock.jpeg",
     "price": 89.99,
@@ -113,6 +129,7 @@
     "link": "/romanclock"
   },
   {
+    "id": 16,
     "label": "ShoesRack",
     "image": "/Product/ShoesRack.jpeg",
     "price": 79.99,
@@ -120,6 +137,7 @@
     "link": "/shoesrack"
   },
   {
+    "id": 17,
     "label": "Sofa",
     "image": "/Product/Sofa.jpeg",
     "price": 799.99,
@@ -127,6 +145,7 @@
     "link": "/sofa"
   },
   {
+    "id": 18,
     "label": "Standing Lamp",
     "image": "/Product/Standing Lamp.jpeg",
     "price": 149.99,
@@ -134,6 +153,7 @@
     "link": "/standing-lamp"
   },
   {
+    "id": 19,
     "label": "UmbrellaStand",
     "image": "/Product/UmbrellaStand.jpeg",
     "price": 49.99,
@@ -141,6 +161,7 @@
     "link": "/umbrellastand"
   },
   {
+    "id": 20,
     "label": "WoodenTray",
     "image": "/Product/WoodenTray.jpeg",
     "price": 39.99,
