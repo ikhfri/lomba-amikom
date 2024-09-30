@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 'use client';
 
 import CardProduct from "@/app/components/Product/CardProduct";
@@ -17,7 +18,6 @@ export default function ProductPage() {
                 end: '+=3000',
                 scrub: 1,
                 pin: true,
-                markers: true,
                 onUpdate: (self) => {
                     gsap.to(".card-translate", {
                         x: `${-350 * self.progress}vw`,
@@ -32,7 +32,7 @@ export default function ProductPage() {
 
 
     return (
-        <div className="relative bg-white w-screen h-[400vh]" style={{ backgroundImage: "url('/bg-product.jpg')" }}>
+        <div className="relative bg-white w-screen md:h-[400vh] h-[500vh]" style={{ backgroundImage: "url('/bg-product.jpg')" }}>
             <div className="container mx-auto py-16 card-scroll-trigger">
                 <CardProduct/>
             </div>
