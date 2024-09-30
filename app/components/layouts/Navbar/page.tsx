@@ -14,9 +14,9 @@ export default function Navbar() {
 
   return (
     <main className="flex justify-center">
-      <nav className="w-[40%] rounded-full mt-5 z-50 h-20 font-semibold opacity-95 bg-opacity-90 shadow-md backdrop-filter-[40px] bg-slate-600 fixed">
+      <nav className="w-[40vw] rounded-full mt-5 z-50 h-20 font-semibold opacity-95 bg-opacity-90 shadow-md backdrop-filter-[40px] bg-slate-600 fixed">
         <ul className="flex justify-end mt-7 mr-16 text-center">
-          <img src="/nevtik.png" alt="" className="w-[8%] absolute left-0 ml-4 top-0 mt-2" />
+          <img src="/nevtik.png" alt="" className="h-[62px] absolute left-0 ml-4 top-0 mt-2" />
           {navbarItems.map((item, index) => (
             <li key={index} className="flex items-center justify-center relative w-28 h-6">
               <Link href={item.link} className="flex items-center">

@@ -7,9 +7,8 @@ import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import FurniturePage from "../Furniture/Furniture";
-import Buku from "@/app/components/3D/Buku";
-import Sofa from "@/app/components/3D/Sofa";
+import RunningText from "@/app/components/layouts/RunningText/page";
+import { useRef } from "react";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -19,71 +18,44 @@ const playfair = Playfair_Display({
 });
 
 export default function HeroPage() {
+  
+  const imageRef2 = useRef<HTMLImageElement | null>(null);
 
-  useGSAP (() => {
-    const tl = gsap.timeline();
-
-    tl.from(".hero-header", {opacity: 1})
-    .from(".hero-text", {
-      scale: 1.3,
-      y: 40,
-      opacity: 0,
-      ease: "back.out(3)",
-      stagger: .1,
-      duration: .5,
-    })
-    // tl.from("hero-description", {
-    //   scale: 1,
-    //   y: 20,
-    //   ease: "power1.in",
-    //   opacity: 0,
-    //   duration: .5,
-    // })
-
-
+  useGSAP(() => {
+  
     const scrollTl = gsap.timeline({
       scrollTrigger: {
-        trigger: '.hero',
+        trigger: '.image-trigger',
         start: 'top top',
-        end: 'bottom bottom',
-        scrub: 1.5,
-        markers: true,
+        end: '+=600 center',
+        scrub: 16,
+        markers: true
       }
     });
 
-    scrollTl
-      .fromTo("body",
-      {
-        backgroundColor: "#F9EBD7",
-      },
-      {
-        backgroundColor: "#3b82f6",
-        overwrite: "auto",
-      },
-      1,
-    )
+    scrollTl.to(imageRef2.current, {
+      y: "-40%",
+      duration: 6,
+      ease: 'power1.inOut'
+    })
+
 
   })
 
+
   return (
-    <div className={`flex ${playfair.className} hero`}>
-      <div className="h-screen items-center inline-block m-auto relative top-52 w-full justify-center hero-header ">
-        <Buku />
-        <Sofa />
-        <h1 className="text-[12vh] hero-text text-center font-semibold -left-2 ml-10 ">
-          Nevtik 
-        </h1>
-        <h1 className="text-[12vh] hero-text text-center font-semibold -left-2 ml-10 ">
-          Furniture
-        </h1>
-        <p className="w-[50vw] m-auto items-center top-10 relative text-center hero-text">Transform your home into a dream space with our stunning furniture collection. Each piece is crafted with meticulous attention to detail and the highest quality, ensuring not just striking aesthetics but also comfort and functionality.</p>
-        <div className="flex justify-center mt-40 ml-10">
-          <button className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-300">
-            Shop Now
-          </button>
+    <div className={` ${playfair.className} h-screen w-screen bg-white`}>
+      <div className="bg-white">
+        <div className="flex flex-col image-trigger justify-center items-center relative top-20 text-[#beb8b2]">
+          <h1 className="items-center text-[2vh]">Furniture Solutions</h1>
+          <h1 className="text-[5vh] w-[50%] tracking-widest text-center font-normal">WHERE EXPERIENCE MEETS PERSONALIZATION</h1>
+          <Image ref={imageRef2} src="/pxfuel.jpg" alt="kantor" width={1000} height={1000} priority className="w-[40%] z-10 rounded-lg top-28 relative"/>
+          <p className="relative top-12 w-[50vw] text-[2vh] text-center">We at Nevtik Furniture have been providing high quality commercial furniture and helping customers in planning their work space. Whether you're looking for a quality desk at an affordable price or want to overhaul your entire office space, our team of experts is ready to help you every step of the way, from selecting furniture to planning the layout.</p>
         </div>
       </div>
-      {/* <FurniturePage /> */}
+      <div className="relative top-[-20%] opacity-35">
+        <RunningText />
+      </div>
     </div>
   );
 }

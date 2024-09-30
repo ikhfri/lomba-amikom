@@ -6,11 +6,11 @@ export default function CardProduct() {
     const CardData = DataProduct.product;
 
     return (
-    <div className="bg-gray-900 py-16 w-screen">
+    <div className="py-16 w-screen">
         <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {CardData.map((item, index) => (
-                    <div key={index} className="bg-white rounded-lg shadow-lg p-8">
+                    <div key={index} className="bg-white rounded-lg shadow-[10px_-0px_18px_3px_#000] p-8">
                         <div className="relative overflow-hidden">
                             <img className="object-cover w-full h-full" src={item.image} alt="Product" />
                             <div className="absolute inset-0 bg-black opacity-40"></div>

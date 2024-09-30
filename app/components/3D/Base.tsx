@@ -21,7 +21,7 @@ export function Buku(props: JSX.IntrinsicElements['group']) {
   const { nodes, materials } = useGLTF('/base.glb') as GLTFResult
   return (
     <>
-      <hemisphereLight intensity={1} />
+      <pointLight intensity={30} />
       <group {...props} dispose={null}>
         <mesh geometry={nodes.model.geometry} material={materials.place_holder} rotation={[Math.PI / 2, 0, 0]} scale={2} />
       </group>

@@ -8,6 +8,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { Suspense } from "react";
 import { Loading } from './CanvasLoader';
 import { Buku } from "../Base";
+import { Kursi } from "../Kursi";
 // without registering scrolltriiger the model will break
 gsap.registerPlugin(ScrollTrigger);
 
@@ -31,7 +32,7 @@ export const SofaContainer = () => {
         floatIntensity={1}
         floatingRange={[-0.1, 0.1]}
         >
-          <Sofa/>
+          <Kursi />
         </Float>
       </Suspense>
     </Canvas>
